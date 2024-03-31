@@ -1,43 +1,64 @@
 var images = document.querySelectorAll('.image img');
 var prev = document.querySelector('.prev');
-var next = document.querySelector('.next');
+var next = document.querySelector('.right');
 var close = document.querySelector('.close');
 var galleryImg = document.querySelector('.gallery_inner img');
 var gallery = document.querySelector('.gallery');
+
 var currentIndex = 0;
 
-function showGallery(index){
-    galleryImg.src = images[index].src;
-    currentIndex = index;
-    gallery.classList.add('show');
+function showGallery() {
+    gallery.classList.add('show'); // Hiển thị gallery khi click vào hình ảnh
+
+    if (currentIndex === 0) {
+        prev.classList.add('hide');
+    } else {
+        prev.classList.remove('hide');
+        if (currentIndex === images.length - 1) {
+            next.classList.add('hide');
+        } else {
+            next.classList.remove('hide');
+        }
+    }
+
+    updateImage();
 }
 
-function hideGallery(){
-    gallery.classList.remove('show');
+
+function updateImage() {
+    galleryImg.src = images[currentIndex].src;
 }
 
-images.forEach(function(item, index) {
-    item.addEventListener('click', function() {
-        showGallery(index);
+images.forEach((item, index) => {
+    item.addEventListener('click', function (e) {
+        currentIndex = index;
+        showGallery();
+        e.stopPropagation();
     });
 });
 
-close.addEventListener('click', hideGallery);
+close.addEventListener('click', function (e) {
+    e.stopPropagation(); // thêm này vàonha
+    gallery.classList.remove('show'); // Đóng gallery khi nhấn vào nút close
+});
 
-document.addEventListener('keydown', function(e) {
+document.addEventListener('keydown', function (e) {
+    e.stopPropagation();
     if (e.keyCode === 27) {
-        hideGallery();
+        gallery.classList.remove('show');
     }
 });
 
-prev.addEventListener('click', function() {
+prev.addEventListener('click', function () {
     if (currentIndex > 0) {
-        showGallery(currentIndex - 1);
+        currentIndex--;
+        showGallery();
     }
 });
 
-next.addEventListener('click', function() {
+next.addEventListener('click', function () {
     if (currentIndex < images.length - 1) {
-        showGallery(currentIndex + 1);
+        currentIndex++;
+        showGallery();
     }
 });
