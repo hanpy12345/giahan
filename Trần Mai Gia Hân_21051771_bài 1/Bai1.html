@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Giới Thiệu Bản Thân</title>
+    <meta name="Home Description" content="Home">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+  </head>
+  <style>
+  h3 {
+      color: rgb(12, 143, 49);
+      font-size: 25px;
+  }
+  img {
+    transition: transform 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.1);
+}
+
+body {
+    background: linear-gradient(45deg, #ffcc00, #ff6699);
+    background-size: 400% 400%;
+    animation: gradient 5s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+input[type="text"] {
+    transition: width 0.4s ease-in-out;
+    width: 200px;
+}
+
+input[type="text"]:focus {
+    width: 300px;
+}
+
+
+.row {
+	display: flex;
+	max-width: 100%;
+	flex-wrap: wrap;
+	margin-left: 20px;
+	margin-right: 5px;
+}
+.center{
+	text-align:center;
+}
+.col-5{
+	flex: 0 0 25%;
+	max-width: 25%;
+}
+.col-5 .card .center .image-chatluong img{
+	border-radius: 50%;
+}
+.card {
+	margin-bottom: 20px;
+}
+
+.image-chatluong img {
+		transition: transform 0.5s ease;
+	}
+	
+	.image-chatluong:hover img {
+		transform: rotate(360deg);
+	}
+	.card .image img {
+    width: 80%; /* Kích thước ban đầu */
+    transition: transform 0.2s ease; /* Thêm hiệu ứng chuyển đổi */
+	}
+
+.card .image img:hover {
+    transform: scale(1.2); /* Phóng to khi hover */
+	}
+  .text{
+    margin-top:10%;
+  }
+  .icon1{
+    font-size:25px;
+    color:white;
+}
+.icon-container {
+    background-color:transparent;
+   border-color:white;
+   border-style:solid;
+    border-radius: 40px;
+    margin:6px;
+    padding-top: 16px;
+    padding-bottom: 9px;
+    padding-right: 12px;
+    padding-left: 16px;
+    border-width:0.6px;
+}
+.icon-container:hover{
+    background:linear-gradient(to right,#EE9CA7 , #FFDDE1);
+    text-decoration:none;
+   
+}
+/*slide*/
+#slideshow {
+  overflow: hidden;
+  height: 350px;
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.slide-wrapper {
+  width: 400%; /* Kích thước tổng cộng của tất cả các slide */
+  animation: slide 8s ease infinite; /* Sử dụng animation slide với thời gian 8 giây, lặp vô hạn */
+}
+
+.slide {
+  float: left;
+  height: 350px; /* Điều chỉnh chiều cao của slide */
+  width: 25%; /* Sửa kích thước slide thành 25% của chiều rộng của slide-wrapper, để hiển thị 4 slide trên mỗi hàng */
+}
+
+@keyframes slide {
+  0% {margin-left: 0;}
+  20% {margin-left: 0;}
+  25% {margin-left: -100%;} /* Di chuyển slide sang trái một slide khi đến 25% thời gian */
+  45% {margin-left: -100%;}
+  50% {margin-left: -200%;} /* Di chuyển slide sang trái hai slide khi đến 50% thời gian */
+  70% {margin-left: -200%;}
+  75% {margin-left: -300%;} /* Di chuyển slide sang trái ba slide khi đến 75% thời gian */
+  95% {margin-left: -300%;}
+  100% {margin-left: 0;} /* Trở về slide đầu tiên khi hoàn thành một chu kỳ */
+}
+
+</style>
+  <body style="background-color: #f8fcfb">
+    <header>
+      <center>
+        <h1 style="color: rgb(6, 15, 6)">
+         Hello mọi người mình là Gia Hân đây!
+        </h1>
+        <Align>"You are you, I am me"
+</Align>
+        <hr width="70%"
+    color="#006400"
+    align="center"
+    size="5px">
+        <img width= "300" height="400"
+       src="ảnh/ảnh1.jpg" />
+       <img width= "500" height="400" 
+       src="ảnh/ảnh2.jpg" />
+      </center>
+    </header>
+   
+<hr width="70%"
+    color="#006400"
+    align="center"
+    size="5px">
+    <div>
+      <hr width="70%"
+    color="#006400"
+    align="center"
+    size="5px">
+    </div>
+    <div>
+        <center>
+        <marquee width="500" heigth="500"> <h1 style="Color:FireBrick">Chào mừng đến với trang cá nhân của Gia Hân</h1><hr width="50%"></marquee> </body> </html>
+     </center>
+    </div>
+    <br> <br> <br> 
+    <div>
+      <section>
+        <center>
+          <h3 style="color: rgb(17, 88, 17)">HỌC VẤN VÀ KINH NGHIỆM</h3>
+          <center><hr style="width:10%; background-color: rgb(17,88,17); height: 3px"></center>
+        
+            <li>Đang theo học ngành Thương mại điện tử, trường Đại học Công Nghiệp Thành Phố Hồ Chí Minh</li>
+            <li>Thực tập tại Công ty ECO3D</li>
+        
+    </div>
+    <br> <br> <br> 
+    
+   <div id="wrapper"> 
+    <center>
+    <h3 style="color: rgb(17, 88, 17)">NHỮNG MÓN ĂN YÊU THÍCH</h3>
+    <center><hr style="width:10%; background-color: rgb(17,88,17); height: 3px"></center>
+    
+    </center>
+      </div>
+      <br>
+    <br>
+      <div class="row">
+        
+              <div class="col-5">
+          <div class="card">
+            <div class="center">
+              <div class="image-chatluong">
+                <img src="ảnh/nuocepcam.jpg" style="width:80%;">
+              </div>
+              <div class="name">
+                <p style="color: rgb(6, 123, 6); font-size: 27px">Nước ép cam</p>
+              </div>
+              <div class="price">
+                <p></p>
+              </div>
+            </div>
+          </div>
+        </div>
+ 
+        <div class="col-5">
+       <div class="card">
+         <div class="center">
+           <div class="image-chatluong">
+             <img src="ảnh/BentoBox.jpg" style="width:80%;">
+           </div>
+           <div class="name">
+             <p style="color: rgb(6, 123, 6); font-size: 27px">Ben tô Nhật</p>
+           </div>
+           <div class="price">
+             <p></p>
+           </div>
+         </div>
+         
+       </div>
+     </div>
+ 
+              <div class="col-5">
+          <div class="card">
+            <div class="center">
+              <div class="image-chatluong">
+                <img src="ảnh/anh 8.jpg" style="width:80%;">
+              </div>
+              <div class="name">
+                <p style="color: rgb(6, 123, 6); font-size: 27px">Sinh tố dâu</p>
+              </div>
+              <div class="price">
+                <p></p>
+              </div>
+            </div>
+            
+              </div>
+            </div>
+            <div class="col-5">
+           <div class="card">
+             <div class="center">
+               <div class="image-chatluong">
+                 <img src="ảnh/anh 9.jpg" style="width:80%;">
+               </div>
+               <div class="name">
+                 <p style="color: rgb(6, 123, 6); font-size: 27px">Bánh nướng</p>
+               </div>
+               <div class="price">
+                 <p></p>
+               </div>
+             </div>
+             
+               </div>
+             </div>
+ </div>			
+
+ <br><br>
+    <div>
+      
+      <center>
+        <h3 style="color: rgb(17, 88, 17)">CHI TIẾT HƠN NÈ</h3>
+        <center><hr style="width:10%; background-color: rgb(17,88,17); height: 3px"></center>
+      <br><br>
+        <div id="slideshow">
+          <div class="slide-wrapper">
+          <div class="slide"><img src="ảnh/Xưởng Nhiếp ảnh Ảnh bìa Facebook.png"></div>
+          <div class="slide"><img src="ảnh/Xưởng Nhiếp ảnh Ảnh bìa Facebook (1).png"></div>
+          <div class="slide"><img src="ảnh/Xưởng Nhiếp ảnh Ảnh bìa Facebook (2).png"></div>
+          </div>
+          </div>
+    </center>
+    </div>
+
+   
+    <div>
+      <center>
+        <h3 style="color: rgb(17, 88, 17)">SỞ THÍCH CỦA MÌNH</h3>
+        <center><hr style="width:10%; background-color: rgb(17,88,17); height: 3px"></center>
+        <br>
+        <div class="row">
+        
+          <div class="col-5">
+      <div class="card">
+        <div class="center">
+          <div class="image-chatluong">
+            <img src="ảnh/tải xuống.jpg" style="width:80%;">
+          </div>
+          <div class="name">
+            <p style="color: rgb(6, 123, 6); font-size: 27px">Đọc sách</p>
+          </div>
+          <div class="price">
+            <p></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-5">
+   <div class="card">
+     <div class="center">
+       <div class="image-chatluong">
+         <img src="ảnh/xemphim.jpeg" style="width:85%;">
+       </div>
+       <div class="name">
+         <p style="color: rgb(6, 123, 6); font-size: 27px">Xem phim</p>
+       </div>
+       <div class="price">
+         <p></p>
+       </div>
+     </div>
+     
+   </div>
+ </div>
+
+          <div class="col-5">
+      <div class="card">
+        <div class="center">
+          <div class="image-chatluong">
+            <img src="ảnh/2706_so-sanh-dien-thoai-va-may-nghe-nhac-xuan-vu-audio.jpg" style="width:95%;">
+          </div>
+          <div class="name">
+            <p style="color: rgb(6, 123, 6); font-size: 27px">Nghe nhạc</p>
+          </div>
+          <div class="price">
+            <p></p>
+          </div>
+        </div>
+        
+          </div>
+        </div>
+        <div class="col-5">
+       <div class="card">
+         <div class="center">
+           <div class="image-chatluong">
+             <img src="ảnh/ảnh2.jpg" style="width:75%;">
+           </div>
+           <div class="name">
+             <p style="color: rgb(6, 123, 6); font-size: 27px">Đi chơi</p>
+           </div>
+           <div class="price">
+             <p></p>
+           </div>
+         </div>
+         
+           </div>
+         </div>
+</div>			
+
+      </center>  
+       
+
+      <br><br>
+      <div>
+        <center>
+          <h3 style="color: rgb(17, 88, 17)">VIDEO MÌNH YÊU THÍCH</h3>
+          <center><hr style="width:10%; background-color: rgb(17,88,17); height: 3px"></center>
+        <div class="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/1EbVewatq8c?si=aubneJ-1nIe9Nl3b" frameborder="0" allowfullscreen></iframe>
+    </div>
+    </center>
+    
+    
+<br><br>
+    <center>
+      <div>
+        <h3>
+            <h3 style="color: rgb(17, 88, 17)">GỬI CÂU HỎI CHO MÌNH </h3>
+            <center><hr style="width:10%; background-color: rgb(17,88,17); height: 3px"></center>
+        </h3>
+        <form>
+          <div>
+            <input type="text" placeholder="Nhập câu hỏi vào đây?" />
+            <button>Gửi câu hỏi</button>
+          </div>
+           </div>
+           </form>
+          
+    </div>
+  </form>
+</center>
+
+<br><br>
+<center>
+    <div>
+      <h3 style="color: rgb(17, 88, 17)">KẾT NỐI VỚI MÌNH THÔNG QUA</h3>
+      <center><hr style="width:10%; background-color: rgb(17,88,17); height: 3px"></center>
+        
+      <div class="icon-container">
+        <a href="https://www.threads.net/@t.maighan" target="_blank">
+        <i class="fab fa-threads icon1"></i>
+    </div>
+    
+    <div class="icon-container">
+      <a href="https://www.instagram.com/t.maighan/" target="_blank">
+          <i class="fab fa-instagram icon1"></i>
+      </a>
+  </div>
+  
+    <div class="icon-container">
+      <a href="https://www.facebook.com/tranmai.giahan/" target="_blank">
+        <i class="fab fa-facebook icon1"></i>
+      </a>
+    </div>
+    
+       
+    </div>
+  </section>
+</center> 
+ 
+<br>
+<footer>
+  <center>
+  <p>Bản quyền &copy; 2024 Gia Hân.</p>
+</center>
+</footer>
+<script src="https://kit.fontawesome.com/ac42c3b1f7.js" crossorigin="anonymous"></script>
+</body>
+</html>
